@@ -1,4 +1,4 @@
-package com.javagda25.files_example.zadanie2;
+package com.javagda25.files_example.write.zadanie2;
 
 // Napisz aplikację w której:
 // - wczytaj od użytkownika jedną linię tekstu
@@ -7,7 +7,6 @@ package com.javagda25.files_example.zadanie2;
 // - zamknij plik
 
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Scanner;
 

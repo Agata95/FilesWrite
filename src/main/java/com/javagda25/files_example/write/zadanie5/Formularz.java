@@ -1,9 +1,6 @@
-package com.javagda25.files_example.zadanie5;
+package com.javagda25.files_example.write.zadanie5;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.util.Scanner;
 
 @Data
 

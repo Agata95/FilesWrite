@@ -1,4 +1,4 @@
-package com.javagda25.files_example.zadanie1;
+package com.javagda25.files_example.write.zadanie1;
 
 // Napisz aplikację która otwiera plik 'output_1.txt', zapisuje do niego "Hello World!" a
 // następnie zamyka plik.

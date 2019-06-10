@@ -1,4 +1,4 @@
-package com.javagda25.files_example.zadanie4;
+package com.javagda25.files_example.write.zadanie4;
 
 // Napisz program, a w tym programie wczytaj jedną linię ze skanera od użytkownika.
 // Poproś użytkownika o 'adres pliku'. Po wpisaniu zweryfikuj czy wybrany plik/katalog istnieje,
@@ -7,11 +7,7 @@ package com.javagda25.files_example.zadanie4;
 
 import java.io.*;
 import java.sql.Timestamp;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Main {

@@ -1,10 +1,9 @@
-package com.javagda25.files_example.zadanie3;
+package com.javagda25.files_example.write.zadanie3;
 
 // Należy napisać aplikację która w pętli while czyta ze Scannera wejście użytkownika z
 // konsoli, a następnie linia po linii wypisuje tekst do pliku 'output_3.txt'. Aplikacja ma się
 // zamykać po wpisaniu przez użytkownika komendy "quit".
 
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;

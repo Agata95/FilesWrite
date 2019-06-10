@@ -1,4 +1,4 @@
-package com.javagda25.files_example.zadanie5;
+package com.javagda25.files_example.write.zadanie5;
 
 // Stwórz klasę formularz. Formularz reprezentuje odpowiedzi których udzielił użytkownik.
 // Aplikacja ma po uruchomieniu rozpocząć od zadawania pytań użytkownikowi. Po wpisaniu
@@ -8,7 +8,6 @@ package com.javagda25.files_example.zadanie5;
 // (kobieta/mezczyzna), zarobki i zadaj dwa dodatkowe pytania. Po czynności zamknij plik i
 // program.
 
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
