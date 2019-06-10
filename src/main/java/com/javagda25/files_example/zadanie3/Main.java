@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        try (PrintWriter printWriter = new PrintWriter(new FileWriter("output_3.txt", false))){
+        try (PrintWriter printWriter = new PrintWriter(new FileWriter("katalog/output_3.txt", false))){
             String komenda = scanner.nextLine();
 
             while (!komenda.equalsIgnoreCase("quit")){

@@ -31,5 +31,6 @@ public class Main {
         System.out.println("Czas ostatniej modyfikacji: " + localDateTime);
         System.out.println("Prawa do odczytu: " + plik.canRead());
 
+
     }
 }

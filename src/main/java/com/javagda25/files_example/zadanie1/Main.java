@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 public class Main {
     public static void main(String[] args) {
         try {
-            PrintWriter printWriter = new PrintWriter("output_1.txt");
+            PrintWriter printWriter = new PrintWriter("katalog/output_1.txt");
 
             printWriter.println("Hello World!");
 

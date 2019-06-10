@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            PrintWriter printWriter = new PrintWriter("output_2.txt");
+            PrintWriter printWriter = new PrintWriter("katalog/output_2.txt");
             printWriter.println(scanner.next());
             printWriter.close();
         } catch (FileNotFoundException e) {
