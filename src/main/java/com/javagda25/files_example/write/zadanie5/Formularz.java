@@ -43,12 +43,12 @@ public class Formularz {
     }
 
     public String zwrocWFormacie() {
-        return "\n------\n" + "wiek=" + wiek + "\n" +
+        return "------\n" + "wiek=" + wiek + "\n" +
                 "wzrost=" + wzrost + "\n" +
                 "czyKobieta=" + czyKobieta + "\n" +
                 "zarobki=" + zarobki + "\n" +
                 "czyMaPsa=" + czyMaPsa + "\n" +
-                "rozmiarButa=" + rozmiarButa;
+                "rozmiarButa=" + rozmiarButa + "\n";
     }
 
 

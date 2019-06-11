@@ -28,9 +28,9 @@ public class Main {
                 } else {
                     formularz.parsujLinie(linia);
                 }
-
             }
 
+            formularzList.add(formularz);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
