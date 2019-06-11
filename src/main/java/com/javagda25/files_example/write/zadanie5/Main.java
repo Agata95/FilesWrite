@@ -8,6 +8,7 @@ package com.javagda25.files_example.write.zadanie5;
 // (kobieta/mezczyzna), zarobki i zadaj dwa dodatkowe pytania. Po czynności zamknij plik i
 // program.
 
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,34 +16,33 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Formularz formularz = new Formularz();
+
         Scanner scanner = new Scanner(System.in);
 
-        try (PrintWriter printWriter = new PrintWriter(new FileWriter("katalog/output_from.txt"))){
-            System.out.println("Podaj swój wiek");
-            formularz.setWiek(scanner.nextInt());
+        Formularz formularz = new Formularz();
 
-            System.out.println("Podaj swój wzrost:");
-            formularz.setWzrost(scanner.nextDouble());
+        System.out.println("Wiek?");
+        formularz.setWiek(scanner.nextInt());
 
-            System.out.println("Czy jesteś kobietą? true / false");
-            formularz.setCzyKobieta(scanner.nextBoolean());
+        System.out.println("Wzrost?");
+        formularz.setWzrost(scanner.nextInt());
 
-            System.out.println("Podaj swoje zarobki:");
-            formularz.setZarobki(scanner.nextDouble());
+        System.out.println("Czy jesteś kobietą?");
+        formularz.setCzyKobieta(scanner.nextBoolean());
 
-            System.out.println("Czy masz kota? true / false");
-            formularz.setCzyMaKota(scanner.nextBoolean());
+        System.out.println("Zarobki?");
+        formularz.setZarobki(scanner.nextInt());
 
-            System.out.println("Czy studiujesz? true / false");
-            formularz.setCzyStudiuje(scanner.nextBoolean());
+        System.out.println("Czy masz psa?");
+        formularz.setCzyMaPsa(scanner.nextBoolean());
 
-            printWriter.println(formularz.zwrocWFormacie());
+        System.out.println("Numer buta?");
+        formularz.setRozmiarButa(scanner.nextInt());
 
-        } catch (IOException e) {
+        try(PrintWriter writer = new PrintWriter("formularze.txt")){
+            writer.println(formularz.zwrocWFormacie());
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-
     }
 }

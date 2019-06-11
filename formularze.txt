@@ -1,0 +1,8 @@
+
+------
+wiek=24
+wzrost=165
+czyKobieta=true
+zarobki=2453.0
+czyMaPsa=false
+rozmiarButa=38

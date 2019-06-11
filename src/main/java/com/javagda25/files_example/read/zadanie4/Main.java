@@ -9,25 +9,35 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> listaSlow = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("katalog/output_from.txt"))) {
+        List<Formularz> formularzList = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader("formularze.txt"))) {
             String linia;
+            Formularz formularz = null;
 
             while ((linia = reader.readLine()) != null) {
-//                System.out.println(linia);
-                String[] slowa = linia.split(" ");
-                listaSlow.addAll(Arrays.asList(slowa));
+                if (linia.equals("------")) {
+                    if (formularz != null) {
+//                        System.out.println(formularz);
+                        formularzList.add(formularz);
+                    }
+                    formularz = new Formularz();
+                } else {
+                    formularz.parsujLinie(linia);
+                }
+
             }
-            System.out.println(listaSlow);
 
-
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        formularzList.forEach(System.out::println);
+        System.out.println("Ilość:" + formularzList.size());
     }
 }
