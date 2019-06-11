@@ -1,0 +1,6 @@
+wiek = 25'
+wzrost = 167.4'
+czy Kobieta = true'
+zarobki = 1783.5'
+czy ma kota = false'
+czy studiuje = false
